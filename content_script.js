@@ -52,9 +52,9 @@ function handleText(textNode)
 	v = v.replace(/\bis\b/g, "ams");
 	v = v.replace(/\bam\b/g, "ams");
 	v = v.replace(/\bfriends\b/g, "pals");
-	v = v.replace(/\that\b/g, "thats");
-	v = v.replace(/\cool\b/g, "brutal");
-	v = v.replace(/\TIL\b/g, "Todays I have learneds");
+	v = v.replace(/\bthat\b/g, "thats");
+	v = v.replace(/\bcool\b/g, "brutal");
+	v = v.replace(/\bTIL\b/g, "Todays I have learneds");
 	v = v.skwisgaarify();
 	v = v.replace(/\bfriend\b/g, "pal");
 	if (Math.random()<0.1){
