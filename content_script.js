@@ -1,12 +1,12 @@
 
 
-String.prototype.skwisgaarify = function(){
+function skwisgaarify(str){
     return(
-        this.replace( 
+        str.replace( 
             new RegExp("([cydrtpgklvbnm](?= ))", "gi"), 
             // Add the character s at the end of some random words (40% chance)
             function($1){ 
-                if (Math.random() < 0.4){
+                if (Math.random() < 0.5){
                     return( $1+"s" );
                 } else {
                     return( $1 );
