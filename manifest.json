@@ -1,8 +1,10 @@
 {
 	"manifest_version": 2,
 	"name": "Reddit Skwisgaarifyer",
-	"version": "1.0",
-	"icons": { "128": "icon128.png" },
+	"short_name": "skwizz",
+	"version": "1.22",
+	"icons": { 	"128": "icon128.png",
+				"48": "icon48.png" },
 	"description": "Sometimes changes texts on thats reddits so thats it's spelleds, how you say, way more gooders than befores.",
 	"content_scripts": 
 	[
