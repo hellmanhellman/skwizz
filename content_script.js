@@ -6,7 +6,7 @@ function skwisgaarify(str){
             new RegExp("([cydrtpgklvbnm](?= ))", "gi"), 
             // Add the character s at the end of some random words (40% chance)
             function($1){ 
-                if (Math.random() < 0.5){
+                if (Math.random() < 0.4){
                     return( $1+"s" );
                 } else {
                     return( $1 );
@@ -55,7 +55,7 @@ function handleText(textNode)
 	v = v.replace(/\bthat\b/g, "thats");
 	v = v.replace(/\bcool\b/g, "brutal");
 	v = v.replace(/\bTIL\b/g, "Todays I have learneds");
-	v = v.skwisgaarify();
+	v = skwisgaarify(v);
 	v = v.replace(/\bfriend\b/g, "pal");
 	if (Math.random()<0.1){
 		v = v.replace(/\.$/g, ". Well, I guess THATS DOABLE.");
