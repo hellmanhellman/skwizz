@@ -54,12 +54,15 @@ function handleText(textNode)
 	v = v.replace(/\bfriends\b/g, "pals");
 	v = v.replace(/\bthat\b/g, "thats");
 	v = v.replace(/\bcool\b/g, "brutal");
+<<<<<<< HEAD
 	v = v.replace(/\bneat\b/g, "brutal");
 	v = v.replace(/\bgood\b/g, "brutal");
 	v = v.replace(/\bthanks\b/gi, "thanks (i guess)");
 	v = v.replace(/\bbrother\b/g, "brother --I MEANS BANDMATE--");
 	v = v.replace(/\bbrothers\b/g, "brothers --I MEANS BANDMATES--");
 	v = v.replace(/(:\()/g, "well maybe I should just KILL MYSELF. would THAT be brutal enough for you??");
+=======
+>>>>>>> 28af8562e39cf98ec7f656663a33baed86052098
 	v = v.replace(/\bTIL\b/g, "Todays I have learneds");
 	v = skwisgaarify(v);
 	v = v.replace(/\bfriend\b/g, "pal");
