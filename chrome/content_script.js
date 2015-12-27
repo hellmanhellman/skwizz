@@ -1,11 +1,11 @@
-
+// Adding a comment to test sublimetext git functionality..
 
 function skwisgaarify(str){
     return(
-        str.replace( 
-            new RegExp("([cydrtpgklvbnm](?= ))", "gi"), 
+        str.replace(
+            new RegExp("([cydrtpgklvbnm](?= ))", "gi"),
             // Add the character s at the end of some random words (40% chance)
-            function($1){ 
+            function($1){
                 if (Math.random() < 0.4){
                     return( $1+"s" );
                 } else {
@@ -16,20 +16,20 @@ function skwisgaarify(str){
     );
 }
 
-function walk(node) 
+function walk(node)
 {
 	// I stole this function from here:
 	// http://is.gd/mwZp7E
-	
+
 	var child, next;
 
-	switch ( node.nodeType )  
+	switch ( node.nodeType )
 	{
 		case 1:  // Element
 		case 9:  // Document
 		case 11: // Document fragment
 			child = node.firstChild;
-			while ( child ) 
+			while ( child )
 			{
 				next = child.nextSibling;
 				walk(child);
@@ -45,7 +45,7 @@ function walk(node)
 	}
 }
 
-function handleText(textNode) 
+function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
@@ -69,7 +69,7 @@ function handleText(textNode)
 	if (Math.random()<0.1){
 		v = v.replace(/\.$/g, ". Well, I guess THATS DOABLE.");
 	}
-	
+
 	textNode.nodeValue = v;
 }
 
