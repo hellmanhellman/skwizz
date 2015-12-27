@@ -3,7 +3,7 @@ skwizz
 
 Reddit Skwisgaarifyer for Chrome
 
-Changes a few words around reddit. **Feel free to suggest more changes!** You dildo.
+Changes a few words around reddit. **Feel free to suggest more changes!**
 
 Firefox version [here](https://github.com/hellmanhellman/skwizz-firefox).
 
